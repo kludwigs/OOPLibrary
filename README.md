@@ -1,7 +1,3 @@
-### Monsoon Commerce Object Oriented coding assessment
----
-Thank you for your interest in working Monsoon Commerce, our team thought your first interview went well, and we are happy to extend an invitation to complete a coding exercise to demonstrate some of the skills we talked about during your interview.
-
 For this scenario you have been hired to maintain and, if possible, expand  pre-existing code designed to manage a small library. The existing code is incomplete, and not necessarily correct. There are broken unit tests and code that does not adhere to Object Oriented Design principles. There is no documentation, and the former developer has fled the country. Your Product Owner has expressed that it is absolutely critical the code be able to perform the following functions in order to be considered viable.
 
  * Implement circulation limits such that patrons can have no more than:
