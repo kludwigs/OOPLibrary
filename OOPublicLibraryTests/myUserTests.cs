@@ -195,7 +195,8 @@ namespace OOPublicLibraryTests
             success = teacher.CheckOut(item2);
             Assert.IsFalse(success);
             // pay fines then try to check out again
-            teacher.PayFines();
+            decimal finespaid = teacher.PayFines();
+            Assert.IsTrue(finespaid > 0);
             success = teacher.CheckOut(item2);
             Assert.IsTrue(success);
         }

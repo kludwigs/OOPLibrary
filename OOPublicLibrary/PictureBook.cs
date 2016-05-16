@@ -70,7 +70,7 @@ namespace OOPublicLibrary
         }
         public int GetFineRate(DateTime start, DateTime end)
         {
-            // fine accrues in days
+            // fine accrues daily
             return (end - start).Days;
         }
         public Decimal GetFineMax()

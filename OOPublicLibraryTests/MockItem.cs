@@ -65,6 +65,7 @@ namespace OOPublicLibraryTests
         {
             return fineamount;
         }
+        // for interval after the due date the fine will accrue
         public int GetFineRate(DateTime start, DateTime end)
         {
             return (end - start).Seconds;

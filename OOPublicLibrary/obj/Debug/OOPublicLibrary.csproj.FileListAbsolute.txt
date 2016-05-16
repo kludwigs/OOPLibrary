@@ -3,3 +3,8 @@ F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibrar
 F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibrary\obj\Debug\OOPublicLibrary.dll
 F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibrary\obj\Debug\OOPublicLibrary.pdb
 F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibrary\obj\Debug\OOPublicLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Karl\Documents\GitHub\OOPLibrary\OOPublicLibrary\bin\Debug\OOPublicLibrary.dll
+C:\Users\Karl\Documents\GitHub\OOPLibrary\OOPublicLibrary\bin\Debug\OOPublicLibrary.pdb
+C:\Users\Karl\Documents\GitHub\OOPLibrary\OOPublicLibrary\obj\Debug\OOPublicLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Karl\Documents\GitHub\OOPLibrary\OOPublicLibrary\obj\Debug\OOPublicLibrary.dll
+C:\Users\Karl\Documents\GitHub\OOPLibrary\OOPublicLibrary\obj\Debug\OOPublicLibrary.pdb
