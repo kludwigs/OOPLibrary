@@ -32,3 +32,12 @@ In addition to the mandatory features required, your Product Owner has created a
 	-Overdue items incur fines at a rate defined for each item type. 
 	-A Patron owes fines based on the overdue items they currently have checked out.
 	-A Patron cannot check out additional items while owing a fine.
+	
+Personal Notes: 
+
+
+I've chosen to implement Features 3 and 4. I believe the service of feature 3 is something that is needed for the foundation of the software. Giving a blanket type to all patrons isn't ideal to me. The implementation of this feature has the Adult object as a dervied class of patron and Teacher is now a derived class of Adult. Having a teacher a derived class of an adult allows children being linked to easily. This idea would be extended if there are other special adult types. I have placed no constraints that multiple Child objects can be assigned to the same Adult. 
+
+Feature 4 is implemented as it is important to hold those accountable for overdue books and generate income for a library. I had some debate as whether to implement feature 1 as statistics such as: How many books are checked out (and which ones)? How many times has an item has been checked out? This information would help improve inventory management. Of course searching for items would be easier. 
+
+

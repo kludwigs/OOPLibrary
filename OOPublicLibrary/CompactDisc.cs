@@ -15,50 +15,66 @@ namespace OOPublicLibrary
 
         DateTime checkouttime;
 
-        decimal overdueFineRate = 2;
+        decimal fineAmount = 2;
         decimal fineMax = 15;
 
         /* adding name and description for item */
         string name;
         string description;
 
+        public CompactDisc(bool available)
+        {
+            this.available = available;
+        }
+
         public bool Available()
         {
-            throw new NotImplementedException();
+            return available;
         }
 
         public bool CheckOut(Patron patron)
         {
-            throw new NotImplementedException();
+            if (available)
+            {
+                available = false;
+                checkedOutTo = patron;
+                checkouttime = DateTime.Now;
+                return true;
+            }
+            else
+                return false;
+        }
+        public bool Return(Patron patron)
+        {
+            if (!available && checkedOutTo.Equals(patron))
+            {
+                available = true;
+                checkedOutTo = null;
+                return true;
+            }
+            return false;
         }
 
         public int GetCirculationTimeInSeconds()
         {
-            throw new NotImplementedException();
-        }
-        public bool Return(Patron patron)
-        {
-            throw new NotImplementedException();
+            return circulationTimeInSeconds;
         }
         public DateTime GetCheckOutTime()
         {
-            throw new NotImplementedException();
-        }
-        public DateTime GetItemDueDate()
-        {
-            throw new NotImplementedException();
+            return checkouttime;
         }
         public decimal GetFineAmount()
         {
-            throw new NotImplementedException();
+            return fineAmount;
         }
         public int GetFineRate(DateTime start, DateTime end)
         {
-            throw new NotImplementedException();
+            // fine accrues daily
+            return (end - start).Days;
         }
-        public decimal GetFineMax()
+        public Decimal GetFineMax()
         {
-            throw new NotImplementedException();
+            return fineMax;
         }
     }
 }

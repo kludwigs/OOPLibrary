@@ -51,7 +51,7 @@ namespace OOPublicLibrary
             // so check if item is checked out
             if(!item.Available())
             {                
-                // make sure the patron has the item
+                // it is - make sure the patron has the item
                 var itemToRemove = items.FirstOrDefault(x => x.Equals(item));
                 
                 if (itemToRemove != null)
@@ -59,6 +59,7 @@ namespace OOPublicLibrary
                     // User has the item - let's return it                     
                     if(item.Return(this))
                     {
+                        // calculate fines, if any
                         fines += GetOutstandingFine(item);
                         items.Remove(itemToRemove);                    
                         return true;
