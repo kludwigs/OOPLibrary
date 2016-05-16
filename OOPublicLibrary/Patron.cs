@@ -47,13 +47,16 @@ namespace OOPublicLibrary
         public bool Return(Iitem item)
         {
             //TODO: implement this method
+            // if the item is available it is already returned.
+            // so check if item is checked out
             if(!item.Available())
             {                
+                // make sure the patron has the item
                 var itemToRemove = items.FirstOrDefault(x => x.Equals(item));
                 
                 if (itemToRemove != null)
                 { 
-                    /* User has the item - let's return it */                    
+                    // User has the item - let's return it                     
                     if(item.Return(this))
                     {
                         fines += GetOutstandingFine(item);
@@ -138,12 +141,14 @@ namespace OOPublicLibrary
             }
             return 0;
         }
-        public void PayFines()
+        public decimal PayFines()
         {
+            var tmp = fines;
             fines = 0;
+            return tmp;
         }
         /*
-        public decimal calculateOutstandingFines()
+        public decimal CheckForOutstandingFines()
         {
             decimal calcFines = 0;
             foreach (var item in items)
