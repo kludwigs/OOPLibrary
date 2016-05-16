@@ -1,0 +1,5 @@
+F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibrary\bin\Debug\OOPublicLibrary.dll
+F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibrary\bin\Debug\OOPublicLibrary.pdb
+F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibrary\obj\Debug\OOPublicLibrary.dll
+F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibrary\obj\Debug\OOPublicLibrary.pdb
+F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibrary\obj\Debug\OOPublicLibrary.csprojResolveAssemblyReference.cache

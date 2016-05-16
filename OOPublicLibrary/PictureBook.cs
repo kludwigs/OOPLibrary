@@ -1,34 +1,38 @@
-﻿using System;
+﻿using Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Interfaces;
-using OOPublicLibrary;
 
-namespace OOPublicLibraryTests
+namespace OOPublicLibrary
 {
-    class MockItem : Iitem
+ 
+    public class PictureBook : Iitem
     {
         bool available;
         Patron checkedOutTo;
+        Int32 circulationTimeInSeconds = 3 * 7 * 24 * 60 * 60;
+
         DateTime checkouttime;
-        
-        // only mock item has public fineamount
-        public decimal fineamount = 0;
-        decimal finemax = 20;
 
-        Int32 circulationTimeInSeconds = 3;
+        decimal fineAmount = 0.75m;
+        decimal fineMax = 20;
 
-        public MockItem(bool available)
+        // adding name and description for item 
+        string name;
+        string description;
+
+        public PictureBook(bool available)
         {
             this.available = available;
         }
+
         public bool Available()
         {
             return available;
         }
-        /* added additional logic so available is set to false when item is checked out */
+
         public bool CheckOut(Patron patron)
         {
             if (available)
@@ -41,7 +45,6 @@ namespace OOPublicLibraryTests
             else
                 return false;
         }
-        /* Added Return Method To Toggle available back to true */
         public bool Return(Patron patron)
         {
             if (!available && checkedOutTo.Equals(patron))
@@ -63,15 +66,16 @@ namespace OOPublicLibraryTests
         }
         public decimal GetFineAmount()
         {
-            return fineamount;
+            return fineAmount;
         }
         public int GetFineRate(DateTime start, DateTime end)
         {
-            return (end - start).Seconds;
+            // fine accrues in days
+            return (end - start).Days;
         }
-        public decimal GetFineMax()
+        public Decimal GetFineMax()
         {
-            return finemax;
+            return fineMax;
         }
     }
 }

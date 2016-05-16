@@ -12,5 +12,11 @@ namespace Interfaces
         bool Available();
         bool CheckOut(Patron patron);
         int GetCirculationTimeInSeconds();
+        // added methods
+        bool Return(Patron patron);
+        DateTime GetCheckOutTime();
+        Decimal GetFineAmount();
+        int GetFineRate(DateTime start, DateTime end);
+        Decimal GetFineMax();
     }
 }

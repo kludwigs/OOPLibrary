@@ -1,0 +1,14 @@
+F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibraryTests\obj\Debug\OOPublicLibraryTests.csprojResolveAssemblyReference.cache
+F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibraryTests\bin\Debug\OOPublicLibraryTests.dll
+F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibraryTests\bin\Debug\OOPublicLibraryTests.pdb
+F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibraryTests\bin\Debug\OOPublicLibrary.dll
+F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibraryTests\bin\Debug\OOPublicLibrary.pdb
+F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibraryTests\obj\Debug\OOPublicLibraryTests.dll
+F:\MonsoonCommerceTechnicalAssessment\CodeChallenge\CodeChallenge\OOPublicLibraryTests\obj\Debug\OOPublicLibraryTests.pdb
+C:\Users\Karl\Documents\GitHub\OOPLibrary\OOPublicLibraryTests\bin\Debug\OOPublicLibraryTests.dll
+C:\Users\Karl\Documents\GitHub\OOPLibrary\OOPublicLibraryTests\bin\Debug\OOPublicLibraryTests.pdb
+C:\Users\Karl\Documents\GitHub\OOPLibrary\OOPublicLibraryTests\bin\Debug\OOPublicLibrary.dll
+C:\Users\Karl\Documents\GitHub\OOPLibrary\OOPublicLibraryTests\bin\Debug\OOPublicLibrary.pdb
+C:\Users\Karl\Documents\GitHub\OOPLibrary\OOPublicLibraryTests\obj\Debug\OOPublicLibraryTests.csprojResolveAssemblyReference.cache
+C:\Users\Karl\Documents\GitHub\OOPLibrary\OOPublicLibraryTests\obj\Debug\OOPublicLibraryTests.dll
+C:\Users\Karl\Documents\GitHub\OOPLibrary\OOPublicLibraryTests\obj\Debug\OOPublicLibraryTests.pdb
