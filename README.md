@@ -35,6 +35,7 @@ In addition to the mandatory features required, your Product Owner has created a
 	
 Personal Notes: 
 
+Overall I've strived to make much of the logic in the patron class. I considered (especially when the inventory grows) to create abstract classes that implement the Iitem interface to limit code in derived classes. i.e. one abstract book class for all categories of books. In the interface of Iitem I have added methods so it makes it easy for patron class to perform much of the logic with a view of one object type in order to use less reflection.
 
 I've chosen to implement Features 3 and 4. I believe the service of feature 3 is something that is needed for the foundation of the software. Giving a blanket type to all patrons isn't ideal to me. The implementation of this feature has the Adult object as a dervied class of patron and Teacher is now a derived class of Adult. Having a teacher a derived class of an adult allows children being linked to easily. This idea would be extended if there are other special adult types. I have placed no constraints that multiple Child objects can be assigned to the same Adult. 
 
