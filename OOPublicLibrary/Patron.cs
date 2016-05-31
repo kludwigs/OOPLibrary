@@ -88,17 +88,12 @@ namespace OOPublicLibrary
 
                 if (items.Count() < maxItems)
                 {
-                    if (item.GetType() == typeof(AdultFictionBook))
-                    {
-                        if (items.OfType<AdultFictionBook>().Count() == maxAdultFictionBooks)
-                            return false;
-                    }
-                    else if (item.GetType() == typeof(CompactDisc))
-                        if (items.OfType<CompactDisc>().Count() == maxCompactDiscs)
-                            return false;
-                        else if (item.GetType() == typeof(PictureBook))
-                            if (items.OfType<PictureBook>().Count() == maxPictureBooks)
-                                return false;
+                    if (item.GetType() == typeof(AdultFictionBook) && (items.Count(x => x.GetType() == typeof(AdultFictionBook)) == MaxAdultFictionBooks))
+                        return false;
+                    else if(item.GetType() == typeof(CompactDisc) && (items.Count(x => x.GetType() == typeof(CompactDisc)) == MaxCompactDiscs))
+                        return false;
+                    else if(item.GetType() == typeof(PictureBook) && (items.Count(x => x.GetType() == typeof(PictureBook)) == MaxPictureBooks))
+                        return false;
                 }
                 else
                     return false;
